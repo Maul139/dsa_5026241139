@@ -1,11 +1,9 @@
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-   public static void bubbleSort3Passes(int[] A) {
+    public static void bubbleSort3Passes(int[] A) {
         int n = A.length;
 
         int passes = 3;
@@ -24,7 +22,7 @@ public class Main {
     public static int linearSearch(int[] A, int target) {
         for (int i = 0; i < A.length; i++) {
             if (A[i] == target) {
-                return i; 
+                return i;
             }
         }
         return -1;
@@ -32,7 +30,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-           File file = new File("dsa_5026241139/src/lw04/prelab/branches.txt");
+            File file = new File("src/lw04/unguided/cards.txt");
+            
             Scanner scanner = new Scanner(file);
 
             int N = scanner.nextInt();
