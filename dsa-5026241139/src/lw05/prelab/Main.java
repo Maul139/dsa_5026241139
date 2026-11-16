@@ -137,10 +137,10 @@ public class Main {
             
             int edges = scanner.nextInt();
             for (int i = 0; i < edges; i++) {
-                int v1 = scanner.nextInt();
-                int v2 = scanner.nextInt();
+                int from = scanner.nextInt();
+                int to = scanner.nextInt();
                 int minutes = scanner.nextInt();
-                addEdge(v1, v2, minutes);
+                addEdge(from, to, minutes);
             }
 
             
@@ -150,7 +150,7 @@ public class Main {
 
             
             System.out.println("=== BFS from " + names[start] + " ===");
-            List<Integer> bfsResult = bfs(start);
+            List<Integer> bfsResult = bfs(start); 
             printPath(bfsResult);
 
             
